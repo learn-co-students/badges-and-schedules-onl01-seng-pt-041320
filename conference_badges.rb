@@ -10,3 +10,11 @@ badges.each do |speaker|
   speakers
 end
 
+def assign_rooms(speakers)
+  room_numbers = []
+  speakers.each_with_index do |name, index|
+    room_numbers << "Hello, #{name}! You'll be assigned to room #{index+=1}!"
+  end
+  room_numbers
+end
+  
